@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Daftar Talent Akuntara untuk proses review, screening, dan pelatihan awal.">
+  <title>Daftar Talent | Portal Akuntara</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/css/styles.css" rel="stylesheet">
+</head>
+<body class="portal-page page-is-ready">
+  <header class="portal-header">
+    <div class="container">
+      <a class="portal-brand" href="../index.html" aria-label="Akuntara Home">
+        <img src="../assets/img/logo-akuntara.jpg" alt="Akuntara">
+      </a>
+      <nav class="portal-nav" aria-label="Portal navigation">
+        <a href="../index.html"><i class="bi bi-arrow-left" aria-hidden="true"></i>Kembali ke Website</a>
+        <button class="btn btn-login btn-sm" type="button" disabled>Masuk Portal</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="portal-intro">
+      <div class="container">
+        <div class="portal-intro-card">
+          <span class="eyebrow">Portal Akuntara</span>
+          <h1>Daftar Talent Akuntara</h1>
+          <p class="lead">Bergabung sebagai calon Talent Akuntara untuk membantu UMKM dalam pencatatan transaksi, administrasi keuangan, dan pengelolaan data bisnis sesuai standar Akuntara.</p>
+          <div class="portal-note">
+            <i class="bi bi-info-circle" aria-hidden="true"></i>
+            <p>Pendaftaran ini belum menjadikan Anda sebagai Talent Aktif atau Operator Data Entry. Tahap ini adalah registrasi awal untuk proses review, screening, dan pelatihan.</p>
+          </div>
+        </div>
+        <aside class="portal-status-card">
+          <span>Status awal</span>
+          <strong>Pendaftar Talent</strong>
+          <p>Profil masuk untuk ditinjau tim Akuntara sebelum proses screening dan pelatihan berikutnya.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="portal-section">
+      <div class="container">
+        <div class="portal-timeline" aria-label="Alur pendaftaran Talent">
+          <div><span>01</span><strong>Daftar Awal</strong><button type="button" data-stage-info="Calon talent mengirim informasi profil, pendidikan, kemampuan, dan ketersediaan awal.">?</button></div>
+          <div><span>02</span><strong>Review Profil</strong><button type="button" data-stage-info="Tim Akuntara meninjau kecocokan profil dengan jalur Talent Akuntara.">?</button></div>
+          <div><span>03</span><strong>Screening Online</strong><button type="button" data-stage-info="Screening awal dapat dilakukan online melalui WhatsApp Call, Google Meet, Zoom, atau channel lain yang disepakati.">?</button></div>
+          <div><span>04</span><strong>Pelatihan Dasar</strong><button type="button" data-stage-info="Kandidat dapat diarahkan mengikuti briefing atau pelatihan dasar sesuai kebutuhan.">?</button></div>
+          <div><span>05</span><strong>Simulasi</strong><button type="button" data-stage-info="Simulasi dan evaluasi dasar dilakukan untuk melihat ketelitian, pemahaman, dan disiplin proses.">?</button></div>
+          <div><span>06</span><strong>Talent Aktif</strong><button type="button" data-stage-info="Talent yang sesuai dapat masuk pool kandidat Operator Data Entry sesuai kebutuhan, kapasitas, dan standar Akuntara.">?</button></div>
+        </div>
+        <div class="portal-stage-detail" data-stage-detail>Pilih ikon ? pada tahap untuk melihat detail proses.</div>
+      </div>
+    </section>
+
+    <section class="portal-section portal-form-section">
+      <div class="container">
+        <div class="portal-layout">
+          <form class="portal-form" data-talent-form novalidate>
+            <div class="portal-form-head">
+              <span class="eyebrow">Registrasi Awal</span>
+              <h2>Informasi calon Talent</h2>
+              <p>Isi data dengan gambaran terbaik saat ini. Data ini membantu tim Akuntara menilai kecocokan awal untuk proses screening dan pelatihan.</p>
+            </div>
+
+            <div class="portal-wizard-progress">
+              <div><span data-step-count>Step 1 dari 6</span><strong data-step-title>Informasi Pribadi</strong></div>
+              <div class="portal-progress-track"><span data-progress-bar></span></div>
+            </div>
+
+            <div class="portal-step is-active" data-step="0">
+              <fieldset class="portal-fieldset">
+                <legend>Informasi Pribadi</legend>
+                <p class="portal-step-copy">Kita mulai dari data kontak agar tim Akuntara bisa menghubungi Anda jika proses screening dilanjutkan.</p>
+                <div class="portal-grid-3">
+                  <label><span>Nama Lengkap <b>*</b></span><input name="nama" type="text" autocomplete="name" placeholder="Contoh: Jennie Lou" required></label>
+                  <label><span>Nomor WhatsApp <b>*</b></span><input name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" placeholder="Contoh: 0812xxxxxxx" pattern="^(\+62|62|0)[0-9\s-]{8,15}$" required></label>
+                  <label><span>Email <b>*</b></span><input name="email" type="email" autocomplete="email" placeholder="nama@email.com" required></label>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="portal-step" data-step="1">
+              <fieldset class="portal-fieldset">
+                <legend>Kategori &amp; Latar Belakang</legend>
+                <p class="portal-step-copy">Talent Akuntara terbuka untuk siswa SMK, mahasiswa, fresh graduate, profesional, dan umum yang ingin belajar serta bekerja dengan standar Akuntara.</p>
+                <div class="portal-grid-2">
+                  <label><span>Kategori Pendaftar <b>*</b></span>
+                    <select name="kategori" required>
+                      <option value="">Pilih kategori</option>
+                      <option>Siswa SMK</option>
+                      <option>Mahasiswa</option>
+                      <option>Fresh Graduate</option>
+                      <option>Profesional / Karyawan Aktif</option>
+                      <option>Umum / Lainnya</option>
+                    </select>
+                  </label>
+                  <label><span>Status Saat Ini <b>*</b></span>
+                    <select name="status" required>
+                      <option value="">Pilih status</option>
+                      <option>Siswa</option>
+                      <option>Mahasiswa</option>
+                      <option>Fresh Graduate</option>
+                      <option>Bekerja</option>
+                      <option>Belum Bekerja</option>
+                      <option>Lainnya</option>
+                    </select>
+                  </label>
+                  <label><span>Nama Sekolah / Kampus / Instansi <b>*</b></span><input name="instansi" type="text" placeholder="Contoh: SMK Akuntansi Nusantara" required></label>
+                  <label><span>Jurusan / Bidang <b>*</b></span><input name="jurusan" type="text" placeholder="Contoh: Akuntansi, Administrasi Bisnis" required></label>
+                  <label class="portal-full-row"><span>Kelas / Semester / Posisi Saat Ini</span><input name="posisi" type="text" placeholder="Contoh: Kelas 12, Semester 5, Staff Admin"></label>
+                  <label class="portal-full-row"><span>Alamat Domisili</span><textarea name="alamat" rows="3" placeholder="Nama jalan, gedung, nomor, atau patokan utama"></textarea></label>
+                  <label><span>Kecamatan</span><input name="kecamatan" type="text" placeholder="Contoh: Kebayoran Baru"></label>
+                  <label><span>Kota / Kabupaten <b>*</b></span><input name="kota" type="text" placeholder="Contoh: Jakarta Selatan" required></label>
+                  <label><span>Provinsi <b>*</b></span>
+                    <select name="provinsi" required>
+                      <option value="">Pilih provinsi</option>
+                      <option>DKI Jakarta</option>
+                      <option>Banten</option>
+                      <option>Jawa Barat</option>
+                      <option>Jawa Tengah</option>
+                      <option>DI Yogyakarta</option>
+                      <option>Jawa Timur</option>
+                      <option>Bali</option>
+                      <option>Sumatera Utara</option>
+                      <option>Sumatera Barat</option>
+                      <option>Sumatera Selatan</option>
+                      <option>Lampung</option>
+                      <option>Kalimantan Timur</option>
+                      <option>Kalimantan Selatan</option>
+                      <option>Sulawesi Selatan</option>
+                      <option>Lainnya</option>
+                    </select>
+                  </label>
+                  <label><span>Kode Pos</span><input name="kode_pos" type="text" inputmode="numeric" placeholder="Contoh: 12190" pattern="^[0-9]{5}$"></label>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="portal-step" data-step="2">
+              <fieldset class="portal-fieldset">
+                <legend>Perangkat &amp; Koneksi</legend>
+                <p class="portal-step-copy">Akses laptop dan internet akan sangat membantu karena pekerjaan Talent dilakukan menggunakan sistem berbasis web.</p>
+                <div class="portal-grid-3">
+                  <label><span>Akses Laptop / Komputer <b>*</b></span>
+                    <select name="laptop" required>
+                      <option value="">Pilih akses perangkat</option>
+                      <option>Laptop pribadi</option>
+                      <option>Laptop keluarga / sharing</option>
+                      <option>Laptop sekolah / kampus</option>
+                      <option>Laptop kantor</option>
+                      <option>Komputer rumah</option>
+                      <option>Belum memiliki akses laptop / komputer</option>
+                    </select>
+                  </label>
+                  <label><span>Koneksi Internet <b>*</b></span>
+                    <select name="internet" required>
+                      <option value="">Pilih kondisi internet</option>
+                      <option>Stabil</option>
+                      <option>Cukup stabil</option>
+                      <option>Terbatas</option>
+                      <option>Belum tersedia rutin</option>
+                    </select>
+                  </label>
+                  <label><span>Tempat Utama Mengerjakan Tugas <b>*</b></span>
+                    <select name="tempat" required>
+                      <option value="">Pilih tempat utama</option>
+                      <option>Rumah</option>
+                      <option>Sekolah / Kampus</option>
+                      <option>Kantor</option>
+                      <option>Tempat umum / coworking</option>
+                      <option>Fleksibel</option>
+                    </select>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="portal-step" data-step="3">
+              <fieldset class="portal-fieldset">
+                <legend>Pengalaman &amp; Kemampuan</legend>
+                <p class="portal-step-copy">Tidak harus sudah mahir. Yang penting jujur dengan kondisi awal dan siap mengikuti proses pembelajaran.</p>
+                <h3 class="portal-mini-title">Pengalaman yang Pernah Dimiliki</h3>
+                <div class="portal-check-grid">
+                  <label><input name="pengalaman" type="checkbox" value="Pernah melakukan input data">Pernah melakukan input data</label>
+                  <label><input name="pengalaman" type="checkbox" value="Pernah menggunakan Excel / Google Sheets">Pernah menggunakan Excel / Google Sheets</label>
+                  <label><input name="pengalaman" type="checkbox" value="Pernah belajar akuntansi dasar">Pernah belajar akuntansi dasar</label>
+                  <label><input name="pengalaman" type="checkbox" value="Pernah menggunakan software accounting">Pernah menggunakan software accounting</label>
+                  <label><input name="pengalaman" type="checkbox" value="Pernah membantu administrasi usaha">Pernah membantu administrasi usaha</label>
+                  <label><input name="pengalaman" type="checkbox" value="Pernah membuat laporan keuangan sederhana">Pernah membuat laporan keuangan sederhana</label>
+                  <label><input name="pengalaman" type="checkbox" value="Pernah belajar pajak">Pernah belajar pajak</label>
+                  <label><input name="pengalaman" type="checkbox" value="Belum ada pengalaman, tetapi bersedia belajar">Belum ada pengalaman, tetapi bersedia belajar</label>
+                </div>
+                <h3 class="portal-mini-title">Kepercayaan Diri Skill</h3>
+                <div class="portal-grid-3">
+                  <label><span>Kemampuan Excel / Spreadsheet <b>*</b></span>
+                    <select name="excel" required><option value="">Pilih level</option><option>Belum bisa</option><option>Dasar</option><option>Cukup</option><option>Baik</option><option>Mahir</option></select>
+                  </label>
+                  <label><span>Pemahaman Akuntansi Dasar <b>*</b></span>
+                    <select name="akuntansi" required><option value="">Pilih level</option><option>Belum paham</option><option>Dasar</option><option>Cukup</option><option>Baik</option><option>Mahir</option></select>
+                  </label>
+                  <label><span>Ketelitian Input Data <b>*</b></span>
+                    <select name="ketelitian" required><option value="">Pilih level</option><option>Perlu dilatih</option><option>Cukup teliti</option><option>Teliti</option><option>Sangat teliti</option></select>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="portal-step" data-step="4">
+              <fieldset class="portal-fieldset">
+                <legend>Minat &amp; Ketersediaan</legend>
+                <p class="portal-step-copy">Pilih minat dan ketersediaan sebagai preferensi awal, bukan jadwal kerja tetap.</p>
+                <h3 class="portal-mini-title">Minat Utama</h3>
+                <div class="portal-check-grid">
+                  <label><input name="minat" type="checkbox" value="Data Entry">Data Entry</label>
+                  <label><input name="minat" type="checkbox" value="Akuntansi">Akuntansi</label>
+                  <label><input name="minat" type="checkbox" value="Administrasi Bisnis">Administrasi Bisnis</label>
+                  <label><input name="minat" type="checkbox" value="Pajak">Pajak</label>
+                  <label><input name="minat" type="checkbox" value="Laporan Keuangan">Laporan Keuangan</label>
+                  <label><input name="minat" type="checkbox" value="Analisis Data">Analisis Data</label>
+                  <label><input name="minat" type="checkbox" value="Membantu UMKM">Membantu UMKM</label>
+                  <label><input name="minat" type="checkbox" value="Belum yakin, ingin mengenal program dulu">Belum yakin, ingin mengenal program dulu</label>
+                </div>
+                <div class="portal-grid-3 mt-4">
+                  <div>
+                    <span class="portal-label">Hari yang tersedia</span>
+                    <div class="portal-quick-actions">
+                      <button type="button" data-day-action="weekday">Pilih Weekday</button>
+                      <button type="button" data-day-action="all">Pilih Semua</button>
+                      <button type="button" data-day-action="clear">Kosongkan</button>
+                    </div>
+                    <div class="portal-check-row">
+                      <label><input name="hari" type="checkbox" value="Senin">Senin</label>
+                      <label><input name="hari" type="checkbox" value="Selasa">Selasa</label>
+                      <label><input name="hari" type="checkbox" value="Rabu">Rabu</label>
+                      <label><input name="hari" type="checkbox" value="Kamis">Kamis</label>
+                      <label><input name="hari" type="checkbox" value="Jumat">Jumat</label>
+                      <label><input name="hari" type="checkbox" value="Sabtu">Sabtu</label>
+                      <label><input name="hari" type="checkbox" value="Minggu">Minggu</label>
+                    </div>
+                  </div>
+                  <div>
+                    <span class="portal-label">Waktu yang tersedia</span>
+                    <div class="portal-quick-actions">
+                      <button type="button" data-time-action="all">Pilih Semua</button>
+                      <button type="button" data-time-action="clear">Kosongkan</button>
+                    </div>
+                    <div class="portal-check-row">
+                      <label><input name="waktu" type="checkbox" value="09.00 - 12.00">09.00 - 12.00</label>
+                      <label><input name="waktu" type="checkbox" value="12.00 - 15.00">12.00 - 15.00</label>
+                      <label><input name="waktu" type="checkbox" value="15.00 - 18.00">15.00 - 18.00</label>
+                      <label><input name="waktu" type="checkbox" value="18.00 - 20.00">18.00 - 20.00</label>
+                    </div>
+                  </div>
+                  <label><span>Estimasi Waktu per Minggu <b>*</b></span>
+                    <select name="waktu_mingguan" required>
+                      <option value="">Pilih estimasi</option>
+                      <option>&lt; 5 jam</option>
+                      <option>5 - 10 jam</option>
+                      <option>10 - 20 jam</option>
+                      <option>&gt; 20 jam</option>
+                      <option>Belum yakin</option>
+                    </select>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="portal-step" data-step="5">
+              <fieldset class="portal-fieldset">
+                <legend>Komitmen &amp; Preview</legend>
+                <p class="portal-step-copy">Baca kembali komitmen dasar sebelum mengirim pendaftaran Talent Akuntara.</p>
+                <div class="portal-check-grid">
+                  <label><input name="komitmen" type="checkbox" value="Saya bersedia mengikuti proses screening Akuntara" required>Saya bersedia mengikuti proses screening Akuntara</label>
+                  <label><input name="komitmen" type="checkbox" value="Saya bersedia mengikuti pelatihan / briefing jika diperlukan" required>Saya bersedia mengikuti pelatihan / briefing jika diperlukan</label>
+                  <label><input name="komitmen" type="checkbox" value="Saya bersedia mengikuti SOP dan standar kerja Akuntara" required>Saya bersedia mengikuti SOP dan standar kerja Akuntara</label>
+                  <label><input name="komitmen" type="checkbox" value="Saya memahami bahwa pendaftaran ini belum menjamin diterima sebagai Talent Aktif" required>Saya memahami bahwa pendaftaran ini belum menjamin diterima sebagai Talent Aktif</label>
+                  <label class="portal-full-row"><input name="komitmen" type="checkbox" value="Saya memahami bahwa penugasan diberikan berdasarkan kebutuhan, kapasitas, ketersediaan, dan hasil evaluasi" required>Saya memahami bahwa penugasan diberikan berdasarkan kebutuhan, kapasitas, ketersediaan, dan hasil evaluasi</label>
+                </div>
+                <label class="portal-textarea-wrap"><span>Catatan Tambahan</span><textarea name="catatan" rows="4" placeholder="Ceritakan motivasi, pengalaman, atau hal yang ingin Anda sampaikan kepada Tim Akuntara."></textarea></label>
+                <div class="portal-preview-doc mt-4" data-preview-doc></div>
+                <div class="portal-preview-next">
+                  <button class="portal-info-toggle" type="button" data-info-toggle aria-expanded="false">
+                    <span>Yang terjadi setelah submit</span>
+                    <i class="bi bi-chevron-down" aria-hidden="true"></i>
+                  </button>
+                  <div class="portal-info-body" data-info-body hidden>
+                    <ul>
+                      <li>Tim Akuntara meninjau data awal.</li>
+                      <li>Tim menghubungi via WhatsApp jika diperlukan.</li>
+                      <li>Screening awal dilakukan secara online.</li>
+                      <li>Kandidat dapat diarahkan ke pelatihan atau briefing.</li>
+                      <li>Simulasi dan evaluasi dilakukan sebelum menjadi Talent Aktif.</li>
+                      <li>Penugasan diberikan berdasarkan kebutuhan, kapasitas, ketersediaan, dan kualitas hasil kerja.</li>
+                    </ul>
+                    <div class="portal-info-note">Pendaftaran ini bukan lowongan kerja tetap dan belum menjamin penugasan langsung.</div>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="portal-wizard-actions">
+              <button class="btn btn-outline-primary btn-lg" type="button" data-prev-step>Kembali</button>
+              <button class="btn btn-primary btn-lg" type="button" data-next-step>Lanjut</button>
+              <button class="btn btn-primary btn-lg d-none" type="submit" data-submit-step>Kirim Pendaftaran Talent</button>
+            </div>
+
+            <div class="portal-success d-none" data-success-state>
+              <i class="bi bi-check-circle" aria-hidden="true"></i>
+              <div>
+                <h3>Terima kasih. Data awal pendaftaran Talent Anda telah diterima.</h3>
+                <p>Tim Akuntara akan meninjau profil Anda dan menghubungi Anda melalui WhatsApp jika diperlukan untuk proses screening berikutnya.</p>
+                <div class="portal-success-meta">
+                  <span>Status: <strong>Pendaftar Talent</strong></span>
+                  <span>Next step: <strong>Review Profil oleh Tim Akuntara</strong></span>
+                  <span>Estimated response: <strong>Tim akan menghubungi Anda setelah data awal ditinjau.</strong></span>
+                </div>
+                <a class="btn btn-whatsapp mt-3" href="#" target="_blank" rel="noopener" data-whatsapp-link>Lanjutkan via WhatsApp</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="talent.js"></script>
+</body>
+</html>

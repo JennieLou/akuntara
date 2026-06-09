@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Daftar minat Akuntara untuk UMKM, talent, dan partner ekosistem.">
+  <title>Daftar | Akuntara</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <div data-component="header"></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Pendaftaran Awal</span>
+        <h1>Daftar minat bergabung dengan ekosistem Akuntara.</h1>
+        <p class="lead mt-3">Halaman ini disiapkan sebagai alur sementara untuk calon UMKM, talent, dan partner. Proses registrasi lengkap akan dikembangkan bertahap sesuai kebutuhan verifikasi.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow">Pilih Jalur</span>
+          <h2>Mulai dari pendaftaran minat, lalu tim Akuntara akan melakukan verifikasi.</h2>
+          <p class="lead">Nantinya proses daftar dapat mencakup data usaha, identitas, dokumen pendukung, dan kebutuhan layanan. Untuk prototype ini, form masih bersifat statis.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card-clean register-card">
+              <span class="icon-box">01</span>
+              <h3>Daftar UMKM</h3>
+              <p>Untuk pemilik bisnis yang ingin merapikan pembukuan, pajak, dan laporan keuangan bersama Akuntara.</p>
+              <a class="btn btn-primary w-100" href="portal/daftar-umkm.html">Mulai Daftar UMKM</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-clean register-card">
+              <span class="icon-box">02</span>
+              <h3>Daftar Talent</h3>
+              <p>Untuk siswa, alumni, fresh graduate, dan junior accountant yang ingin masuk jalur training Akuntara.</p>
+              <a class="btn btn-outline-primary w-100" href="portal/daftar-talent.html">Mulai Daftar Talent</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-clean register-card">
+              <span class="icon-box">03</span>
+              <h3>Daftar Partner</h3>
+              <p>Untuk sekolah, kampus, training center, komunitas, atau mitra yang ingin berkolaborasi.</p>
+              <a class="btn btn-outline-primary w-100" href="#register-form">Ajukan Partner</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="register-form">
+      <div class="container">
+        <div class="contact-layout">
+          <div>
+            <div class="section-title">
+              <span class="eyebrow">Form Sementara</span>
+              <h2>Isi data awal.</h2>
+              <p class="lead">Form ini belum mengirim data ke server. Nanti dapat dikembangkan menjadi alur registrasi lengkap dengan upload dokumen dan verifikasi.</p>
+            </div>
+            <form class="card-clean" data-contact-form>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label" for="registerName">Nama</label>
+                  <input class="form-control" id="registerName" type="text" placeholder="Nama lengkap" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="registerEmail">Email</label>
+                  <input class="form-control" id="registerEmail" type="email" placeholder="nama@email.com" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="registerPhone">WhatsApp</label>
+                  <input class="form-control" id="registerPhone" type="tel" placeholder="+62">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="registerType">Jalur Pendaftaran</label>
+                  <select class="form-select" id="registerType">
+                    <option>UMKM</option>
+                    <option>Talent</option>
+                    <option>Partner</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="registerNote">Catatan Awal</label>
+                  <textarea class="form-control" id="registerNote" rows="5" placeholder="Ceritakan kebutuhan atau latar belakang singkat"></textarea>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary btn-lg" type="submit">Kirim Pendaftaran Awal</button>
+                </div>
+                <div class="col-12">
+                  <div class="alert alert-success d-none mb-0" data-form-alert>Terima kasih. Ini form dummy untuk prototype. Tim Akuntara dapat menghubungkan pendaftaran ini ke backend dan proses verifikasi nanti.</div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="contact-aside">
+            <div class="card-clean">
+              <span class="eyebrow">Tahap Berikutnya</span>
+              <h3>Registrasi lengkap bisa mencakup dokumen.</h3>
+              <p>Untuk UMKM, data usaha dan dokumen pendukung dapat dibutuhkan saat onboarding. Untuk talent, proses dapat mencakup identitas, pendidikan, portofolio, dan verifikasi kemampuan.</p>
+            </div>
+            <div class="card-clean">
+              <h3>Butuh bertanya dulu?</h3>
+              <p>Gunakan WhatsApp untuk pertanyaan cepat sebelum mengisi pendaftaran.</p>
+              <a class="btn btn-outline-primary w-100" href="https://wa.me/6281200000000?text=Halo%20Akuntara%2C%20saya%20ingin%20bertanya%20tentang%20pendaftaran%20Akuntara." target="_blank" rel="noopener">Chat WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-component="footer"></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

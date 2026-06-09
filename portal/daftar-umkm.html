@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Daftar UMKM untuk konsultasi awal Akuntara dan proses review sebagai prospect.">
+  <title>Daftar UMKM | Portal Akuntara</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/css/styles.css" rel="stylesheet">
+</head>
+<body class="portal-page page-is-ready">
+  <header class="portal-header">
+    <div class="container">
+      <a class="portal-brand" href="../index.html" aria-label="Akuntara Home">
+        <img src="../assets/img/logo-akuntara.jpg" alt="Akuntara">
+      </a>
+      <nav class="portal-nav" aria-label="Portal navigation">
+        <a href="../index.html"><i class="bi bi-arrow-left" aria-hidden="true"></i>Kembali ke Website</a>
+        <button class="btn btn-login btn-sm" type="button" disabled>Masuk Portal</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="portal-intro">
+      <div class="container">
+        <div class="portal-intro-card">
+          <span class="eyebrow">Portal Akuntara</span>
+          <h1>Daftar UMKM untuk Konsultasi Awal</h1>
+          <p class="lead">Ceritakan kondisi usaha Anda. Tim Akuntara akan meninjau data awal dan menghubungi Anda untuk memetakan kebutuhan pembukuan, pajak, laporan, dan pendampingan yang sesuai.</p>
+          <div class="portal-note">
+            <i class="bi bi-info-circle" aria-hidden="true"></i>
+            <p>Pendaftaran ini belum menjadikan usaha Anda sebagai client aktif. Tahap ini adalah registrasi awal untuk proses review dan konsultasi.</p>
+          </div>
+        </div>
+        <aside class="portal-status-card">
+          <span>Status awal</span>
+          <strong>Prospect</strong>
+          <p>Data masuk untuk ditinjau tim Akuntara sebelum konsultasi awal dilakukan secara online.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="portal-section">
+      <div class="container">
+        <div class="portal-timeline" aria-label="Alur pendaftaran UMKM">
+          <div><span>01</span><strong>Daftar Awal</strong><button type="button" data-stage-info="UMKM mengirim informasi awal usaha, kontak, dan kebutuhan utama.">?</button></div>
+          <div><span>02</span><strong>Review Tim Akuntara</strong><button type="button" data-stage-info="Tim membaca data awal untuk memahami kondisi bisnis dan kecocokan kebutuhan.">?</button></div>
+          <div><span>03</span><strong>Konsultasi Online</strong><button type="button" data-stage-info="Konsultasi awal dilakukan secara online melalui channel yang disepakati bersama.">?</button></div>
+          <div><span>04</span><strong>Verifikasi Dokumen</strong><button type="button" data-stage-info="Dokumen baru diminta setelah kebutuhan dinilai cocok dan tahap konsultasi awal selesai.">?</button></div>
+          <div><span>05</span><strong>Proposal &amp; Kontrak</strong><button type="button" data-stage-info="Akuntara menyiapkan scope layanan, estimasi biaya, dan kontrak setelah kebutuhan jelas.">?</button></div>
+          <div><span>06</span><strong>Onboarding</strong><button type="button" data-stage-info="Onboarding dilakukan setelah agreement, bukan otomatis setelah formulir dikirim.">?</button></div>
+        </div>
+        <div class="portal-stage-detail" data-stage-detail>Pilih ikon ? pada tahap untuk melihat detail proses.</div>
+      </div>
+    </section>
+
+    <section class="portal-section portal-form-section">
+      <div class="container">
+        <div class="portal-layout">
+          <form class="portal-form" data-portal-form novalidate>
+            <div class="portal-form-head">
+              <span class="eyebrow">Registrasi Awal</span>
+              <h2>Informasi awal usaha</h2>
+              <p>Isi data dengan gambaran terbaik saat ini. Detail lebih lengkap akan dibahas setelah tim Akuntara meninjau kebutuhan Anda.</p>
+            </div>
+
+            <div class="portal-wizard-progress">
+              <div><span data-step-count>Step 1 dari 6</span><strong data-step-title>Kontak</strong></div>
+              <div class="portal-progress-track"><span data-progress-bar></span></div>
+            </div>
+
+            <div class="portal-step is-active" data-step="0">
+              <fieldset class="portal-fieldset">
+                <legend>Kontak</legend>
+                <p class="portal-step-copy">Kita mulai dari kontak agar tim Akuntara bisa menghubungi Anda setelah data awal ditinjau.</p>
+                <div class="portal-grid-3">
+                  <label><span>Nama Lengkap <b>*</b></span><input name="nama" type="text" autocomplete="name" placeholder="Contoh: Jennie Lou" required></label>
+                  <label><span>Nomor WhatsApp <b>*</b></span><input name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" placeholder="Contoh: 0812xxxxxxx" pattern="^(\+62|62|0)[0-9\s-]{8,15}$" required></label>
+                  <label><span>Email <b>*</b></span><input name="email" type="email" autocomplete="email" placeholder="nama@email.com" required></label>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="portal-step" data-step="1">
+              <fieldset class="portal-fieldset">
+                <legend>Informasi Usaha</legend>
+                <p class="portal-step-copy">Ceritakan usaha Anda secara ringkas. Data ini membantu tim memahami konteks bisnis sebelum konsultasi.</p>
+                <div class="portal-grid-2">
+                  <label><span>Nama Usaha <b>*</b></span><input name="usaha" type="text" placeholder="Contoh: Kopi Nusantara" required></label>
+                  <label><span>Jenis Usaha <b>*</b></span>
+                    <select name="jenis_usaha" required data-other-trigger="jenis_usaha_lainnya">
+                      <option value="">Pilih jenis usaha</option>
+                      <option>Retail / Perdagangan</option>
+                      <option>F&amp;B / Kuliner</option>
+                      <option>Jasa</option>
+                      <option>Distributor</option>
+                      <option>Manufaktur Skala Kecil</option>
+                      <option>Online Shop / Marketplace</option>
+                      <option>Lainnya</option>
+                    </select>
+                  </label>
+                  <label class="portal-other-field d-none" data-other-field="jenis_usaha_lainnya"><span>Jenis usaha lainnya</span><input name="jenis_usaha_lainnya" type="text" placeholder="Tuliskan jenis usaha Anda"></label>
+                  <label class="portal-full-row"><span>Alamat Usaha</span><textarea name="alamat" rows="3" placeholder="Nama jalan, gedung, nomor, atau patokan utama"></textarea></label>
+                  <label><span>Kecamatan</span><input name="kecamatan" type="text" placeholder="Contoh: Kebayoran Baru"></label>
+                  <label><span>Kota / Kabupaten <b>*</b></span><input name="kota" type="text" placeholder="Contoh: Jakarta Selatan" required></label>
+                  <label><span>Provinsi <b>*</b></span>
+                    <select name="provinsi" required>
+                      <option value="">Pilih provinsi</option>
+                      <option>DKI Jakarta</option>
+                      <option>Banten</option>
+                      <option>Jawa Barat</option>
+                      <option>Jawa Tengah</option>
+                      <option>DI Yogyakarta</option>
+                      <option>Jawa Timur</option>
+                      <option>Bali</option>
+                      <option>Sumatera Utara</option>
+                      <option>Sumatera Barat</option>
+                      <option>Sumatera Selatan</option>
+                      <option>Lampung</option>
+                      <option>Kalimantan Timur</option>
+                      <option>Kalimantan Selatan</option>
+                      <option>Sulawesi Selatan</option>
+                      <option>Lainnya</option>
+                    </select>
+                  </label>
+                  <label><span>Kode Pos</span><input name="kode_pos" type="text" inputmode="numeric" placeholder="Contoh: 12190" pattern="^[0-9]{5}$"></label>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="portal-step" data-step="2">
+              <fieldset class="portal-fieldset">
+                <legend>Snapshot Bisnis</legend>
+                <p class="portal-step-copy">Tidak perlu angka presisi. Pilih range yang paling mendekati kondisi bisnis saat ini.</p>
+                <div class="portal-grid-3">
+                <label><span>Usaha berjalan sejak <b>*</b></span>
+                  <select name="usia_usaha" required>
+                    <option value="">Pilih usia usaha</option>
+                    <option>&lt; 1 tahun</option>
+                    <option>1 - 3 tahun</option>
+                    <option>3 - 5 tahun</option>
+                    <option>&gt; 5 tahun</option>
+                  </select>
+                </label>
+                <label><span>Omset per bulan <b>*</b></span>
+                  <select name="omset" required>
+                    <option value="">Pilih range omset</option>
+                    <option>&lt; Rp10 juta</option>
+                    <option>Rp10 juta - Rp50 juta</option>
+                    <option>Rp50 juta - Rp250 juta</option>
+                    <option>Rp250 juta - Rp1 miliar</option>
+                    <option>&gt; Rp1 miliar</option>
+                    <option>Belum ingin menyebutkan</option>
+                  </select>
+                </label>
+                <label><span>Volume transaksi per bulan <b>*</b></span>
+                  <select name="volume_transaksi" required>
+                    <option value="">Pilih volume transaksi</option>
+                    <option>&lt; 50 transaksi</option>
+                    <option>50 - 200 transaksi</option>
+                    <option>200 - 1.000 transaksi</option>
+                    <option>&gt; 1.000 transaksi</option>
+                    <option>Belum tahu</option>
+                  </select>
+                </label>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="portal-step" data-step="3">
+              <fieldset class="portal-fieldset">
+                <legend>Kondisi &amp; Kebutuhan</legend>
+                <p class="portal-step-copy">Pilih kondisi pencatatan dan kebutuhan yang paling relevan. Boleh pilih lebih dari satu.</p>
+                <h3 class="portal-mini-title">Kondisi Pencatatan Saat Ini</h3>
+                <div class="portal-check-grid">
+                <label><input name="kondisi" type="checkbox" value="Belum ada pencatatan rutin">Belum ada pencatatan rutin</label>
+                <label><input name="kondisi" type="checkbox" value="Catatan manual / buku">Catatan manual / buku</label>
+                <label><input name="kondisi" type="checkbox" value="Excel / Google Sheets">Excel / Google Sheets</label>
+                <label><input name="kondisi" type="checkbox" value="Aplikasi kasir / POS">Aplikasi kasir / POS</label>
+                <label><input name="kondisi" type="checkbox" value="Software accounting">Software accounting</label>
+                <label><input name="kondisi" type="checkbox" value="Sudah punya laporan keuangan">Sudah punya laporan keuangan</label>
+                <label><input name="kondisi" type="checkbox" value="Sudah pernah lapor pajak">Sudah pernah lapor pajak</label>
+                </div>
+                <label class="portal-textarea-wrap"><span>Kondisi lainnya</span><textarea name="kondisi_lainnya" rows="3" placeholder="Jika ada kondisi pencatatan lain, ceritakan singkat di sini"></textarea></label>
+                <h3 class="portal-mini-title">Kebutuhan Utama</h3>
+                <div class="portal-check-grid">
+                <label><input name="kebutuhan" type="checkbox" value="Pencatatan transaksi">Pencatatan transaksi</label>
+                <label><input name="kebutuhan" type="checkbox" value="Laporan keuangan">Laporan keuangan</label>
+                <label><input name="kebutuhan" type="checkbox" value="Pajak">Pajak</label>
+                <label><input name="kebutuhan" type="checkbox" value="Review kondisi bisnis">Review kondisi bisnis</label>
+                <label><input name="kebutuhan" type="checkbox" value="Merapikan data lama">Merapikan data lama</label>
+                <label><input name="kebutuhan" type="checkbox" value="Belum yakin, ingin diskusi dulu">Belum yakin, ingin diskusi dulu</label>
+                </div>
+                <label class="portal-textarea-wrap"><span>Kebutuhan lainnya</span><textarea name="kebutuhan_lainnya" rows="3" placeholder="Ceritakan kebutuhan lain yang belum ada di pilihan"></textarea></label>
+              </fieldset>
+            </div>
+
+            <div class="portal-step" data-step="4">
+              <fieldset class="portal-fieldset">
+                <legend>Preferensi &amp; Catatan</legend>
+                <p class="portal-step-copy">Ini hanya preferensi waktu, bukan jadwal meeting tetap. Tim akan menghubungi Anda setelah data awal ditinjau.</p>
+              <div class="portal-grid-2">
+                <div>
+                  <span class="portal-label">Hari yang nyaman dihubungi</span>
+                  <div class="portal-quick-actions">
+                    <button type="button" data-day-action="weekday">Pilih Weekday</button>
+                    <button type="button" data-day-action="all">Pilih Semua</button>
+                    <button type="button" data-day-action="clear">Kosongkan</button>
+                  </div>
+                  <div class="portal-check-row portal-day-options">
+                    <label><input name="hari" type="checkbox" value="Senin">Senin</label>
+                    <label><input name="hari" type="checkbox" value="Selasa">Selasa</label>
+                    <label><input name="hari" type="checkbox" value="Rabu">Rabu</label>
+                    <label><input name="hari" type="checkbox" value="Kamis">Kamis</label>
+                    <label><input name="hari" type="checkbox" value="Jumat">Jumat</label>
+                    <label><input name="hari" type="checkbox" value="Sabtu">Sabtu</label>
+                  </div>
+                </div>
+                <div>
+                  <span class="portal-label">Jam yang nyaman dihubungi</span>
+                  <div class="portal-quick-actions">
+                    <button type="button" data-time-action="all">Pilih Semua</button>
+                    <button type="button" data-time-action="clear">Kosongkan</button>
+                  </div>
+                  <div class="portal-check-row">
+                    <label><input name="jam" type="checkbox" value="09.00 - 12.00">09.00 - 12.00</label>
+                    <label><input name="jam" type="checkbox" value="12.00 - 15.00">12.00 - 15.00</label>
+                    <label><input name="jam" type="checkbox" value="15.00 - 18.00">15.00 - 18.00</label>
+                    <label><input name="jam" type="checkbox" value="18.00 - 20.00">18.00 - 20.00</label>
+                  </div>
+                </div>
+              </div>
+                <div class="portal-textarea-wrap">
+                  <label><span>Catatan Tambahan</span><textarea name="catatan" rows="5" placeholder="Ceritakan kendala utama atau hal yang ingin dibahas"></textarea></label>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="portal-step" data-step="5">
+              <fieldset class="portal-fieldset">
+                <legend>Preview Pendaftaran</legend>
+                <p class="portal-step-copy">Periksa kembali ringkasan data awal sebelum dikirim ke tim Akuntara.</p>
+                <div class="portal-preview-doc" data-preview-doc></div>
+                <div class="portal-preview-next">
+                  <button class="portal-info-toggle" type="button" data-info-toggle aria-expanded="false">
+                    <span>Yang terjadi setelah submit</span>
+                    <i class="bi bi-chevron-down" aria-hidden="true"></i>
+                  </button>
+                  <div class="portal-info-body" data-info-body hidden>
+                    <ul>
+                      <li>Tim Akuntara meninjau data awal.</li>
+                      <li>Tim menghubungi via WhatsApp.</li>
+                      <li>Konsultasi awal dilakukan online melalui WhatsApp Call, Google Meet, Zoom, atau channel online lain yang disepakati.</li>
+                      <li>Verifikasi dokumen dilakukan setelah kebutuhan dinilai cocok.</li>
+                      <li>Harga, kontrak, dan onboarding dibahas setelah konsultasi awal.</li>
+                    </ul>
+                    <div class="portal-info-note">Belum perlu upload dokumen pada tahap ini.</div>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="portal-wizard-actions">
+              <button class="btn btn-outline-primary btn-lg" type="button" data-prev-step>Kembali</button>
+              <button class="btn btn-primary btn-lg" type="button" data-next-step>Lanjut</button>
+              <button class="btn btn-primary btn-lg d-none" type="submit" data-submit-step>Kirim Pendaftaran Awal</button>
+            </div>
+
+            <div class="portal-success d-none" data-success-state>
+              <i class="bi bi-check-circle" aria-hidden="true"></i>
+              <div>
+                <h3>Terima kasih. Data awal usaha Anda telah diterima.</h3>
+                <p>Tim Akuntara akan meninjau informasi ini dan menghubungi Anda melalui WhatsApp sesuai preferensi waktu yang dipilih.</p>
+                <div class="portal-success-meta">
+                  <span>Status: <strong>Prospect</strong></span>
+                  <span>Next step: <strong>Review Tim Akuntara</strong></span>
+                  <span>Estimated response: <strong>Tim akan menghubungi Anda setelah data awal ditinjau.</strong></span>
+                </div>
+                <a class="btn btn-whatsapp mt-3" href="#" target="_blank" rel="noopener" data-whatsapp-link>Lanjutkan via WhatsApp</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="portal.js"></script>
+</body>
+</html>
